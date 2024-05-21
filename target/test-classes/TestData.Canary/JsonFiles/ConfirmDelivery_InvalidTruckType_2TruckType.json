@@ -1,0 +1,42 @@
+{
+  "dlvNumber": "0076544787",
+  "truckType": ["ACE","ha"],
+  "dock": "A2",
+  "dlvItems": [
+    {
+      "dlvItemNum": "0076544787000010",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0076544787000020",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0076544787000030",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0076544787000040",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0076544787000050",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0076544787000060",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0076544787000070",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    }
+  ]
+}

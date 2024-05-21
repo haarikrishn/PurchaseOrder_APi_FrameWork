@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Sorter_API Framework_3_!5_2024" />
+        <module name="BDD_ApiBaseFramework" />
+        <module name="QuickFill_ApiFramework" />
+        <module name="DemoPWP_API Framework" />
+        <module name="BDD_ApiBaseFramework 4-Sept" />
+        <module name="PWP_API Framework" />
+        <module name="NSDCApiAutomation" />
+        <module name="PROD BDD_ApiBaseFramework 9-Nov" />
+        <module name="PurchaseOrder_API Framework" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

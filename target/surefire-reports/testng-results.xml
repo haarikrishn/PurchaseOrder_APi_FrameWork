@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="6306" started-at="2024-05-06T14:16:28 IST" finished-at="2024-05-06T14:16:34 IST">
+    <groups>
+      <group name="cucumber scenarios">
+        <method signature="SorterTestRunner.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dmartLabs.runner.SorterTestRunner@4232c52b]" name="scenario" class="com.dmartLabs.runner.SorterTestRunner"/>
+      </group> <!-- cucumber scenarios -->
+    </groups>
+    <test name="C:/Users/Labs User&#039;s/Downloads/projectfiles/ysh/PWP_API Framework-28012024/DemoPWP_API Framework/src/main/java/com/dmartLabs/runner/SorterTestRunner.java" duration-ms="6306" started-at="2024-05-06T14:16:28 IST" finished-at="2024-05-06T14:16:34 IST">
+      <class name="com.dmartLabs.runner.SorterTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.dmartLabs.runner.SorterTestRunner@4232c52b]" name="setUpClass" is-config="true" duration-ms="2093" started-at="2024-05-06T14:16:28 IST" finished-at="2024-05-06T14:16:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dmartLabs.runner.SorterTestRunner@4232c52b]" name="scenario" duration-ms="2159" started-at="2024-05-06T14:16:31 IST" data-provider="scenarios" finished-at="2024-05-06T14:16:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the functionality of CreateOneDeliveryWithListOfItemsUsingDT"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the functionality of Create delivery]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a STRING value from a NUMERIC cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:987)
+at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:336)
+at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+at com.dmartLabs.commonutils.ExcelUtils.ReadDataFromExcelDT(ExcelUtils.java:114)
+at com.dmartLabs.stepdefinitions.CreateDeliveryExcelStep.provideDlvItemNumToCreateOneDeliveryWithListOfItemsUsingDTInSorterUsingExcelSheetDT(CreateDeliveryExcelStep.java:52)
+at ✽.Provide dlvItemNum to CreateOneDeliveryWithListOfItemsUsingDTInSorter using excel sheetDT(file:///C:/Users/FD329/OneDrive/Desktop/PurchaseOrder_API%20Framework/./src/test/resources/features/SingleSuite/35_SorterExcel.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.dmartLabs.runner.SorterTestRunner@4232c52b]" name="tearDownClass" is-config="true" duration-ms="1588" started-at="2024-05-06T14:16:33 IST" finished-at="2024-05-06T14:16:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.dmartLabs.runner.SorterTestRunner -->
+    </test> <!-- C:/Users/Labs User's/Downloads/projectfiles/ysh/PWP_API Framework-28012024/DemoPWP_API Framework/src/main/java/com/dmartLabs/runner/SorterTestRunner.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

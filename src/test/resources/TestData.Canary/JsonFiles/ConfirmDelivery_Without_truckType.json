@@ -1,0 +1,41 @@
+{
+  "dlvNumber": "0086377221",
+  "dock": "A1",
+  "dlvItems": [
+    {
+      "dlvItemNum": "0086377221000010",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0086377221000020",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0086377221000030",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0086377221000040",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0086377221000050",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0086377221000060",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0086377221000070",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    }
+  ]
+}

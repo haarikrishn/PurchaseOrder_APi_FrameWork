@@ -1,0 +1,42 @@
+{
+  "dlvNumber": "0067891234",
+  "truckType": "ACE",
+  "dock": "A4",
+  "dlvItems": [
+    {
+      "dlvItemNum": "0000100067891234",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0000200067891234",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0000300067891234",
+      "plannedDlvBoxQty": "2",
+      "minimumBoxes": "2"
+    },
+    {
+      "dlvItemNum": "0000400067891234",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0000500067891234",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0000600067891234",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    },
+    {
+      "dlvItemNum": "0000700067891234",
+      "plannedDlvBoxQty": "30",
+      "minimumBoxes": "3"
+    }
+  ]
+}

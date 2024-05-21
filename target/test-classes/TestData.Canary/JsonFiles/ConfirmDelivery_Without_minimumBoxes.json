@@ -1,0 +1,35 @@
+{
+  "dlvNumber": "0079586820",
+  "truckType": "ACE",
+  "dock": "A1",
+  "dlvItems": [
+    {
+      "dlvItemNum": "0079586820000010",
+      "plannedDlvBoxQty": "2"
+    },
+    {
+      "dlvItemNum": "0079586820000020",
+      "plannedDlvBoxQty": "2"
+    },
+    {
+      "dlvItemNum": "0079586820000030",
+      "plannedDlvBoxQty": "2"
+    },
+    {
+      "dlvItemNum": "0079586820000040",
+      "plannedDlvBoxQty": "30"
+    },
+    {
+      "dlvItemNum": "0079586820000050",
+      "plannedDlvBoxQty": "30"
+    },
+    {
+      "dlvItemNum": "0079586820000060",
+      "plannedDlvBoxQty": "30"
+    },
+    {
+      "dlvItemNum": "0079586820000070",
+      "plannedDlvBoxQty": "30"
+    }
+  ]
+}

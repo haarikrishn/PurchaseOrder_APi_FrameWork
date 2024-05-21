@@ -1,0 +1,36 @@
+
+[
+  {
+    "proposedDlvDate": "20231222",
+    "srcSiteId": "1014",
+    "dstSiteId": "5019",
+    "whNumber": "114",
+    "createdBy": "MHK",
+    "creationDate": "20231218",
+    "creationTime": "112636",
+    "totalGdsMvtStat": "A",
+    "dlvItems": [
+      {
+        "itemSeq": "000010",
+        "stoNum": "5101334418",
+        "stoLineNum": "000010",
+        "ean": "4902430905183",
+        "mrp": "50.00",
+        "matNum": "500017406",
+        "itemDesc": "ORAL B KIDS 2+ YEAR TOOTHBRUSH(3N)",
+        "matGrp": "5OCTBRBAB",
+        "catInd": "F",
+        "stLoc": "3000",
+        "batch": "2503210050",
+        "proposedDlvQty": "96.000",
+        "caselot": "48.00",
+        "uom": "EA",
+        "itemWt": "0.067",
+        "uomWt": "KG",
+        "itemVol": "0.021",
+        "uomVol": "FT3",
+        "pickStatus": "A"
+      }
+    ]
+  }
+]

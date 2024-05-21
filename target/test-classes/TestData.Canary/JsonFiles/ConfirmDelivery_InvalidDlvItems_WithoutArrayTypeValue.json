@@ -1,0 +1,10 @@
+{
+  "dlvNumber": "0084500059",
+  "truckType": "ACE",
+  "dock": "A1",
+  "dlvItems": {
+    "dlvItemNum": "0084500059000010",
+    "plannedDlvBoxQty": "2",
+    "minimumBoxes": "2"
+  }
+}
