@@ -37,8 +37,8 @@ public class RestListener {
 	private static ExtentSparkReporter  getHtmlReporter() {
 		new File(filePath);
 		ExtentSparkReporter htmlReporter = new ExtentSparkReporter (filePath);
-		htmlReporter.config().setDocumentTitle("QuickFill API Automation");
-		htmlReporter.config().setReportName("QuickFill Automation - " + System.getProperty("env") +" Environment");
+		htmlReporter.config().setDocumentTitle("D_Link API Automation");
+		htmlReporter.config().setReportName("D_Link Automation - " + System.getProperty("env") +" Environment");
 		htmlReporter.config().setTheme(Theme.STANDARD);
 		return htmlReporter;
 	}

@@ -4,6 +4,7 @@ import com.dmartLabs.commonutils.ExtentReportManager;
 import com.dmartLabs.commonutils.GenricUtils;
 import com.dmartLabs.config.PropertyReader;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -19,7 +20,7 @@ public class GenericSteps extends Constants {
     public static String username;
     public static String password;
     public static Map<String, String> userCredential;
-    public  static HashMap<String,String>totalObj=new HashMap<>();
+    public static HashMap<String, String> totalObj = new HashMap<>();
 
     @Given("Send Generic data using Feature File")
     public void sendGenericDataUsingFeatureFile(DataTable dataTable) {
@@ -34,6 +35,8 @@ public class GenericSteps extends Constants {
     public void giveUsernameAndPasswordToGetAccessToken(DataTable dataTable) {
         ExtentReportManager.logInfoDetails("Give Username and Password to get Access Token");
         userCredential = dataTable.asMap(String.class, String.class);
+
+
     }
 
     @Given("Give Username and Password for Access Token")
@@ -45,11 +48,11 @@ public class GenericSteps extends Constants {
 
     @Then("verify that status code be equal to {string}")
     public void verifyThatStatusCodeBeEqualTo(String expectedStatusCode) {
-        ExtentReportManager.logInfoDetails("verify that status code is : "+expectedStatusCode);
+        ExtentReportManager.logInfoDetails("verify that status code is : " + expectedStatusCode);
         int statucode = Integer.parseInt(String.valueOf(CommonUtilities.getResponseInstance().getStatusCode()));
         if (statucode == Integer.parseInt(expectedStatusCode)) {
             ExtentReportManager.logPassDetails("Passed");
-            ExtentReportManager.logInfoDetails("Expected Status Code is "+statucode+ " and the Actual Status Code is " + CommonUtilities.getResponseInstance().getStatusCode());
+            ExtentReportManager.logInfoDetails("Expected Status Code is " + statucode + " and the Actual Status Code is " + CommonUtilities.getResponseInstance().getStatusCode());
         } else {
             ExtentReportManager.logFailureDetails("Failed");
             ExtentReportManager.logInfoDetails("Expected status code is " + expectedStatusCode + " and Actual status code is " + CommonUtilities.getResponseInstance().getStatusCode());
@@ -59,12 +62,12 @@ public class GenericSteps extends Constants {
 
     @Then("Verify that status code be equal to {int}")
     public void verifyThatStatusCodeBeEqual(int expectedStatusCode) {
-        ExtentReportManager.logInfoDetails("Verify that status code be equal to "+expectedStatusCode);
+        ExtentReportManager.logInfoDetails("Verify that status code be equal to " + expectedStatusCode);
 
         int actualStatuscode = CommonUtilities.getResponseInstance().getStatusCode();
         if (actualStatuscode == expectedStatusCode) {
             ExtentReportManager.logPassDetails("Passed");
-            ExtentReportManager.logInfoDetails("Expected Status Code is "+expectedStatusCode+ " and the Actual Status Code is " +CommonUtilities.getResponseInstance().getStatusCode());
+            ExtentReportManager.logInfoDetails("Expected Status Code is " + expectedStatusCode + " and the Actual Status Code is " + CommonUtilities.getResponseInstance().getStatusCode());
         } else {
             ExtentReportManager.logFailureDetails("Failed");
             ExtentReportManager.logInfoDetails("Expected status code is " + expectedStatusCode + " but the Actual status code is " + CommonUtilities.getResponseInstance().getStatusCode());
@@ -77,7 +80,7 @@ public class GenericSteps extends Constants {
     @Then("verify that schema should be equal {string}")
     public void verifyThatSchemaShouldBeEqual(String schemaFile) {
 
-        ExtentReportManager.logInfoDetails("Verify that schema should be equal "+schemaFile);
+        ExtentReportManager.logInfoDetails("Verify that schema should be equal " + schemaFile);
         CommonUtilities.getResponseInstance().then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(PropertyReader.fileReaders(JSON_SCHEMA_VALIDATION_PATH, schemaFile)));
         JsonSchemaValidator schema = JsonSchemaValidator.matchesJsonSchema(PropertyReader.fileReaders(JSON_SCHEMA_VALIDATION_PATH, schemaFile));
         ExtentReportManager.logInfoDetails(" Schema is pass ");
@@ -122,31 +125,44 @@ public class GenericSteps extends Constants {
     }
 
     @Given("Give Username and Password and change requestId")
-    public void giveUsernameAndPasswordAndChangeRequestId(DataTable dataTable ) {
-        String Randomerequest = GenricUtils.getRandomDeliveryNumber()+"-"+1;
-     ;
+    public void giveUsernameAndPasswordAndChangeRequestId(DataTable dataTable) {
+        String Randomerequest = GenricUtils.getRandomDeliveryNumber() + "-" + 1;
+        ;
         Map<String, String> RequestDT = dataTable.asMap(String.class, String.class);
         String usernamevalue = RequestDT.get("username");
         String passwordValue = RequestDT.get("password");
         String requestIdValue = RequestDT.get("requestId");
-        totalObj.put("username",usernamevalue);
-        totalObj.put("password",passwordValue);
+        totalObj.put("username", usernamevalue);
+        totalObj.put("password", passwordValue);
         try {
             if (requestIdValue.equals("")) {
                 totalObj.put("requestId", Randomerequest);
-            }
-            else {
+            } else {
                 totalObj.put("requestId", requestIdValue);
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             totalObj.put("requestId", Randomerequest);
         }
 
 
     }
 
+    @And("validate schema for {string} file")
+    public void validateSchemaForFile(String schemaFile) {
+        try {
+            ExtentReportManager.logInfoDetails("verify that schema should be equal " + schemaFile + "for po");
+            CommonUtilities.getResponseInstance().then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(PropertyReader.fileReaders(JSON_SCHEMA_VALIDATION_PATH, schemaFile)));
+            //    //src/main/java/com/dmartLabs/config/schema/po.json
+            JsonSchemaValidator schema = JsonSchemaValidator.matchesJsonSchema(PropertyReader.fileReaders(JSON_SCHEMA_VALIDATION_PATH, schemaFile));
+            ExtentReportManager.logInfoDetails(" Schema is pass " + schema);
+            System.out.println("===========================>" + "schema validation successful");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            System.out.println(e.getMessage()+"==================>error");
+        }
+    }
 
 
 }

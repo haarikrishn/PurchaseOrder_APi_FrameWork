@@ -1,0 +1,692 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "poNumber": {
+      "type": "string"
+    },
+    "documentType": {
+      "type": "string"
+    },
+    "companyCode": {
+      "type": "string"
+    },
+    "poDate": {
+      "type": "string"
+    },
+    "supplierDetails": {
+      "type": "object",
+      "properties": {
+        "supplierCode": {
+          "type": "string"
+        },
+        "vendorCode": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "cin": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "gstIn": {
+          "type": "string"
+        },
+        "attn": {
+          "type": "string"
+        },
+        "fssai": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "supplierCode",
+        "vendorCode",
+        "name",
+        "email",
+        "address",
+        "cin",
+        "fax",
+        "phone",
+        "gstIn",
+        "attn",
+        "fssai"
+      ]
+    },
+    "buyerDetails": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "integer"
+        },
+        "gstIn": {
+          "type": "string"
+        },
+        "cin": {
+          "type": "string"
+        },
+        "attn": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "buyerCode": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "siteId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "phone",
+        "email",
+        "address",
+        "fax",
+        "gstIn",
+        "cin",
+        "attn",
+        "latitude",
+        "longitude",
+        "buyerCode",
+        "state",
+        "siteId"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "itemSeq": {
+              "type": "integer"
+            },
+            "poDueDate": {
+              "type": "string"
+            },
+            "poItemNumber": {
+              "type": "string"
+            },
+            "matNumber": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "string"
+            },
+            "articleDesc": {
+              "type": "string"
+            },
+            "matGroup": {
+              "type": "string"
+            },
+            "siteId": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "caselot": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "volume": {
+              "type": "number"
+            },
+            "mrp": {
+              "type": "integer"
+            },
+            "basicPrice": {
+              "type": "integer"
+            },
+            "netPrice": {
+              "type": "integer"
+            },
+            "tot": {
+              "type": "integer"
+            },
+            "vendorDiscountPer": {
+              "type": "integer"
+            },
+            "vendorDisVal": {
+              "type": "integer"
+            },
+            "sgst": {
+              "type": "integer"
+            },
+            "cgst": {
+              "type": "integer"
+            },
+            "cess": {
+              "type": "integer"
+            },
+            "landedPrice": {
+              "type": "integer"
+            },
+            "storageSection": {
+              "type": "string"
+            },
+            "stockPlacement": {
+              "type": "string"
+            },
+            "leQty": {
+              "type": "integer"
+            },
+            "grnQty": {
+              "type": "integer"
+            },
+            "hsn": {
+              "type": "string"
+            },
+            "uom": {
+              "type": "string"
+            },
+            "pendingQuantity": {
+              "type": "integer"
+            },
+            "hasAppointment": {
+              "type": "boolean"
+            },
+            "totalAmountforArticles": {
+              "type": "integer"
+            },
+            "boxesforArticle": {
+              "type": "integer"
+            },
+            "categories": {
+              "type": "object",
+              "properties": {
+                "categoryCode": {
+                  "type": "string"
+                },
+                "categoryName": {
+                  "type": "string"
+                },
+                "subCategory1Code": {
+                  "type": "string"
+                },
+                "subCategory1Name": {
+                  "type": "string"
+                },
+                "subCategory2Code": {
+                  "type": "string"
+                },
+                "subCategory2Name": {
+                  "type": "string"
+                },
+                "subCategory3Code": {
+                  "type": "string"
+                },
+                "subCategory3Name": {
+                  "type": "string"
+                },
+                "subCategory4Code": {
+                  "type": "string"
+                },
+                "subCategory4Name": {
+                  "type": "string"
+                },
+                "subCategory5Code": {
+                  "type": "string"
+                },
+                "subCategory5Name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "categoryCode",
+                "categoryName",
+                "subCategory1Code",
+                "subCategory1Name",
+                "subCategory2Code",
+                "subCategory2Name",
+                "subCategory3Code",
+                "subCategory3Name",
+                "subCategory4Code",
+                "subCategory4Name",
+                "subCategory5Code",
+                "subCategory5Name"
+              ]
+            },
+            "serialNo": {
+              "type": "integer"
+            },
+            "poItemDelivered": {
+              "type": "boolean"
+            },
+            "canDisplay": {
+              "type": "boolean"
+            },
+            "unloadingTime": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "itemSeq",
+            "poDueDate",
+            "poItemNumber",
+            "matNumber",
+            "ean",
+            "articleDesc",
+            "matGroup",
+            "siteId",
+            "isDeleted",
+            "qty",
+            "caselot",
+            "weight",
+            "volume",
+            "mrp",
+            "basicPrice",
+            "netPrice",
+            "tot",
+            "vendorDiscountPer",
+            "vendorDisVal",
+            "sgst",
+            "cgst",
+            "cess",
+            "landedPrice",
+            "storageSection",
+            "stockPlacement",
+            "leQty",
+            "grnQty",
+            "hsn",
+            "uom",
+            "pendingQuantity",
+            "hasAppointment",
+            "totalAmountforArticles",
+            "boxesforArticle",
+            "categories",
+            "serialNo",
+            "poItemDelivered",
+            "canDisplay",
+            "unloadingTime"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "itemSeq": {
+              "type": "integer"
+            },
+            "poDueDate": {
+              "type": "string"
+            },
+            "poItemNumber": {
+              "type": "string"
+            },
+            "matNumber": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "string"
+            },
+            "articleDesc": {
+              "type": "string"
+            },
+            "matGroup": {
+              "type": "string"
+            },
+            "siteId": {
+              "type": "string"
+            },
+            "isDeleted": {
+              "type": "boolean"
+            },
+            "qty": {
+              "type": "integer"
+            },
+            "caselot": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "volume": {
+              "type": "number"
+            },
+            "mrp": {
+              "type": "integer"
+            },
+            "basicPrice": {
+              "type": "integer"
+            },
+            "netPrice": {
+              "type": "integer"
+            },
+            "tot": {
+              "type": "integer"
+            },
+            "vendorDiscountPer": {
+              "type": "integer"
+            },
+            "vendorDisVal": {
+              "type": "integer"
+            },
+            "sgst": {
+              "type": "integer"
+            },
+            "cgst": {
+              "type": "integer"
+            },
+            "cess": {
+              "type": "integer"
+            },
+            "landedPrice": {
+              "type": "integer"
+            },
+            "storageSection": {
+              "type": "string"
+            },
+            "stockPlacement": {
+              "type": "string"
+            },
+            "leQty": {
+              "type": "integer"
+            },
+            "grnQty": {
+              "type": "integer"
+            },
+            "hsn": {
+              "type": "string"
+            },
+            "uom": {
+              "type": "string"
+            },
+            "pendingQuantity": {
+              "type": "integer"
+            },
+            "hasAppointment": {
+              "type": "boolean"
+            },
+            "totalAmountforArticles": {
+              "type": "integer"
+            },
+            "boxesforArticle": {
+              "type": "integer"
+            },
+            "categories": {
+              "type": "object",
+              "properties": {
+                "categoryCode": {
+                  "type": "string"
+                },
+                "categoryName": {
+                  "type": "string"
+                },
+                "subCategory1Code": {
+                  "type": "string"
+                },
+                "subCategory1Name": {
+                  "type": "string"
+                },
+                "subCategory2Code": {
+                  "type": "string"
+                },
+                "subCategory2Name": {
+                  "type": "string"
+                },
+                "subCategory3Code": {
+                  "type": "string"
+                },
+                "subCategory3Name": {
+                  "type": "string"
+                },
+                "subCategory4Code": {
+                  "type": "string"
+                },
+                "subCategory4Name": {
+                  "type": "string"
+                },
+                "subCategory5Code": {
+                  "type": "string"
+                },
+                "subCategory5Name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "categoryCode",
+                "categoryName",
+                "subCategory1Code",
+                "subCategory1Name",
+                "subCategory2Code",
+                "subCategory2Name",
+                "subCategory3Code",
+                "subCategory3Name",
+                "subCategory4Code",
+                "subCategory4Name",
+                "subCategory5Code",
+                "subCategory5Name"
+              ]
+            },
+            "serialNo": {
+              "type": "integer"
+            },
+            "poItemDelivered": {
+              "type": "boolean"
+            },
+            "canDisplay": {
+              "type": "boolean"
+            },
+            "unloadingTime": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "itemSeq",
+            "poDueDate",
+            "poItemNumber",
+            "matNumber",
+            "ean",
+            "articleDesc",
+            "matGroup",
+            "siteId",
+            "isDeleted",
+            "qty",
+            "caselot",
+            "weight",
+            "volume",
+            "mrp",
+            "basicPrice",
+            "netPrice",
+            "tot",
+            "vendorDiscountPer",
+            "vendorDisVal",
+            "sgst",
+            "cgst",
+            "cess",
+            "landedPrice",
+            "storageSection",
+            "stockPlacement",
+            "leQty",
+            "grnQty",
+            "hsn",
+            "uom",
+            "pendingQuantity",
+            "hasAppointment",
+            "totalAmountforArticles",
+            "boxesforArticle",
+            "categories",
+            "serialNo",
+            "poItemDelivered",
+            "canDisplay",
+            "unloadingTime"
+          ]
+        }
+      ]
+    },
+    "poStatus": {
+      "type": "string"
+    },
+    "poMinDueDate": {
+      "type": "string"
+    },
+    "poMaxDueDate": {
+      "type": "string"
+    },
+    "PODocument": {
+      "type": "string"
+    },
+    "hasAppointments": {
+      "type": "boolean"
+    },
+    "canScheduleAppointments": {
+      "type": "boolean"
+    },
+    "poBufferMinDueDate": {
+      "type": "string"
+    },
+    "poBufferMaxDueDate": {
+      "type": "string"
+    },
+    "totalValueInRs": {
+      "type": "string"
+    },
+    "totalQtyofItems": {
+      "type": "integer"
+    },
+    "totalAmount": {
+      "type": "integer"
+    },
+    "totalBoxes": {
+      "type": "integer"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "bucketName": {
+      "type": "string"
+    },
+    "folderName": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    },
+    "isUpdated": {
+      "type": "boolean"
+    },
+    "IsComplete": {
+      "type": "boolean"
+    },
+    "dstSiteId": {
+      "type": "string"
+    },
+    "buyerEmail": {
+      "type": "string"
+    },
+    "termsOfDlv": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "tdLine": {
+              "type": "string"
+            },
+            "tdFormat": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tdLine",
+            "tdFormat"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tdLine": {
+              "type": "string"
+            },
+            "tdFormat": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tdLine",
+            "tdFormat"
+          ]
+        }
+      ]
+    },
+    "isDeleted": {
+      "type": "boolean"
+    },
+    "isPOReturned": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "poNumber",
+    "documentType",
+    "companyCode",
+    "poDate",
+    "supplierDetails",
+    "buyerDetails",
+    "items",
+    "poStatus",
+    "poMinDueDate",
+    "poMaxDueDate",
+    "PODocument",
+    "hasAppointments",
+    "canScheduleAppointments",
+    "poBufferMinDueDate",
+    "poBufferMaxDueDate",
+    "totalValueInRs",
+    "totalQtyofItems",
+    "totalAmount",
+    "totalBoxes",
+    "barcode",
+    "bucketName",
+    "folderName",
+    "file",
+    "isUpdated",
+    "IsComplete",
+    "dstSiteId",
+    "buyerEmail",
+    "termsOfDlv",
+    "isDeleted",
+    "isPOReturned"
+  ]
+}

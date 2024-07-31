@@ -1,0 +1,4 @@
+# Created at 2024-06-11T11:28:34.676
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Dmart_Github\PurchaseOrder_APi_FrameWork_Git\PurchaseOrder_API Framework-20240520T171451Z-001\PurchaseOrder_API Framework\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

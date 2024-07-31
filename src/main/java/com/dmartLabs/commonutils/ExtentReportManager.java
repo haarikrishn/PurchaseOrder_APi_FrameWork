@@ -24,9 +24,9 @@ public class ExtentReportManager {
 	public static ExtentReports  createInstance(String filePath,String ReportName,String documentTille)
 	{
 		ExtentSparkReporter htmlReporter = new ExtentSparkReporter (filePath);
-		htmlReporter.config().setDocumentTitle("PWP API Automation");
+		htmlReporter.config().setDocumentTitle("D_Link API Automation");
 //		htmlReporter.config().setReportName("QuickFill - " + System.getProperty("env") +" Environment");
-        htmlReporter.config().setReportName("PWP - CANARY Environment");
+        htmlReporter.config().setReportName("D_Link - CANARY Environment");
 		htmlReporter.config().setTheme(Theme.STANDARD);
 		
 		if(extentReports == null) {

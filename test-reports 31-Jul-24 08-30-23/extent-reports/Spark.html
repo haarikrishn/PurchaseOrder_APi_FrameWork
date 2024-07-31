@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>DLink</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 31, 2024 08:30:23</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 31, 2024 08:30:23</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 31, 2024 08:50:24</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>39</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create a multiple purchase orders":1197.906
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Authorization_2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetPO</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetslotsConfirmAppointmentAndCreateGRN</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreateMultiplePosUsingExcel2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateMultiplePosUsingExcel3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetCalender</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>AutomationTestEnginner</td>
+<td>Hari krishna</td>
+</tr>
+<tr>
+<td>FrameworkArchitect</td>
+<td>Raju Baligolla</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>DLink</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 39,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Authorization_2</a><a class="dropdown-item" href="#">@GetPO</a><a class="dropdown-item" href="#">@GetslotsConfirmAppointmentAndCreateGRN</a><a class="dropdown-item" href="#">@CreateMultiplePosUsingExcel2</a><a class="dropdown-item" href="#">@UpdateMultiplePosUsingExcel3</a><a class="dropdown-item" href="#">@GetCalender</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a multiple purchase orders</p>
+            <p class="text-sm">
+              <span>8:30:26 AM</span> / <span>00:19:57:906</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create a multiple purchase orders</h5>
+<span class='badge badge-success'>07.31.2024 8:30:26 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:50:24 AM</span>
+<span class='badge badge-default'>00:19:57:906</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>generate bearer token for vendor appointmet</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.passPrecheckConditionForClientId(io.cucumber.datatable.DataTable)">
+                <span>When pass precheck condition for client id</span>
+      <div><table class='markup-table table '><tr><td>client_id</td><td>nonce</td><td>state</td><td>user_name</td><td>response_type</td><td>redirect_url</td><td>scope</td></tr><tr><td>b4204b8f-81ae-4d32-8724-06e4368123a1</td><td>76ed27b3-015e-4264-8fa1-b93d7867c163</td><td>40f6125c-a1b9-4795-a564-161bcf896d32</td><td>harikrishna.medari@qualitrix.com</td><td>code</td><td>https://canary.dmartlink.com/app/po</td><td>openid</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.generateOtpForParticularClientId(io.cucumber.datatable.DataTable)">
+                <span>And Generate otp for particular client id</span>
+      <div><table class='markup-table table '><tr><td>otp</td><td>nonce</td></tr><tr><td>111111</td><td>3691c15c-51de-4be7-91f5-0221a4b73c49</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.enterPinToAccessTheApplication(io.cucumber.datatable.DataTable)">
+                <span>And enter pin to access the application</span>
+      <div><table class='markup-table table '><tr><td>nonce</td><td>pin</td></tr><tr><td>3691c15c-51de-4be7-91f5-0221a4b73c49</td><td>1234</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.enterTheAuthCodeToAccessTheApplication(io.cucumber.datatable.DataTable)">
+                <span>And enter the Auth code to access the application</span>
+      <div><table class='markup-table table '><tr><td>nonce</td></tr><tr><td>6507049f-2d69-491c-98ba-31f064849b69</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.passOtpAndGenerateBearerToken(io.cucumber.datatable.DataTable)">
+                <span>And pass otp and generate bearer token</span>
+      <div><table class='markup-table table '><tr><td>code</td><td>grant_type</td></tr><tr><td>a0d3996c-9a19-451e-bce7-0277f8b2068e</td><td>authorization_code</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AuthorizationStep.saveTheBearerToken()">
+                <span>And save the  bearer token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(int)">
+                <span>Then Verify that status code be equal to 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Create a multiple  purchase orders using Excel</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Create a multiple  purchase orders using Excel</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And creating purchase order with different suppliercode "100245"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user pass to  main mandatory fields to create a multiple purchase orders</span>
+      <div><table class='markup-table table '><tr><td>companyCode</td><td>documentType</td><td>buyerCode</td><td>buyerEmail</td><td>tdLine</td><td>tdFormat</td><td>tdLine1</td><td>tdFormat1</td></tr><tr><td>ASPL</td><td>ZANB</td><td>H10</td><td>phiroze.lakhani@dmartindia.com</td><td>line 1: This is line one of terms of delivery.</td><td>*</td><td>line 2: This the line tow of terms of delivery.</td><td>*</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user add to  list of articles  "PO Automation Payload (3).xlsx" "PO_Items1023" "4" "1033"to create a multiple purchase orders</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send multiple requests to server using create Po APi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that status code be equal to 201</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>Create a multiple  purchase orders using Excel</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And creating purchase order with different suppliercode "100245"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user pass to  main mandatory fields to create a multiple purchase orders</span>
+      <div><table class='markup-table table '><tr><td>companyCode</td><td>documentType</td><td>buyerCode</td><td>buyerEmail</td><td>tdLine</td><td>tdFormat</td><td>tdLine1</td><td>tdFormat1</td></tr><tr><td>ASPL</td><td>ZANB</td><td>H10</td><td>phiroze.lakhani@dmartindia.com</td><td>line 1: This is line one of terms of delivery.</td><td>*</td><td>line 2: This the line tow of terms of delivery.</td><td>*</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user add to  list of articles  "PO Automation Payload (3).xlsx" "PO_Items1023" "4" "1033"to create a multiple purchase orders</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send multiple requests to server using create Po APi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that status code be equal to 201</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Update a multiple  purchase orders using Excel</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Update a multiple  purchase orders using Excel</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And creating purchase order with different suppliercode "100245" to updatepo</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user pass to  main mandatory fields to update a multiple purchase orders for updatepo</span>
+      <div><table class='markup-table table '><tr><td>companyCode</td><td>documentType</td><td>buyerCode</td><td>buyerEmail</td><td>tdLine</td><td>tdFormat</td><td>tdLine1</td><td>tdFormat1</td></tr><tr><td>ASPL</td><td>ZANB</td><td>H10</td><td>phiroze.lakhani@dmartindia.com</td><td>line 1: This is line one of terms of delivery.</td><td>*</td><td>line 2: This the line tow of terms of delivery.</td><td>*</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user add to  list of articles  "PO Automation Payload (3).xlsx" "UpdatePO" "4" "1033"to update a multiple purchase orders</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send multiple requests to server using Update Po APi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that status code be equal to 201</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Update a multiple  purchase orders using Excel</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And creating purchase order with different suppliercode "100245" to updatepo</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user pass to  main mandatory fields to update a multiple purchase orders for updatepo</span>
+      <div><table class='markup-table table '><tr><td>companyCode</td><td>documentType</td><td>buyerCode</td><td>buyerEmail</td><td>tdLine</td><td>tdFormat</td><td>tdLine1</td><td>tdFormat1</td></tr><tr><td>ASPL</td><td>ZANB</td><td>H10</td><td>phiroze.lakhani@dmartindia.com</td><td>line 1: This is line one of terms of delivery.</td><td>*</td><td>line 2: This the line tow of terms of delivery.</td><td>*</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user add to  list of articles  "PO Automation Payload (3).xlsx" "UpdatePO" "4" "1033"to update a multiple purchase orders</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send multiple requests to server using Update Po APi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that status code be equal to 201</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>Get all the po's which are created in DC</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetPOSStep_HK.userCallGetAllPOApiUserShouldGetAllPosInDC()">
+                <span>When user call GetAllPO Api user should get all pos in DC</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(int)">
+                <span>Then Verify that status code be equal to 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.validateSchemaForFile(java.lang.String)">
+                <span>And validate schema for "po.json" file</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="130"><span class="badge log pass-bg mr-2">Pass</span>get the calender about particular DC</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetPOSStep_HK.userCallTheGetCalenderApi()">
+                <span>When user call the get calender api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(int)">
+                <span>Then Verify that status code be equal to 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="140"><span class="badge log pass-bg mr-2">Pass</span>Get slots and confirm appontement and create GRN</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.validateGetSlots2ConfirmApponmentStep.callAllTheMethodsToExecuteTheScript(io.cucumber.datatable.DataTable)">
+                <span>When call all the methods to execute the script</span>
+      <div><table class='markup-table table '><tr><td>isPalletized</td></tr><tr><td>true</td></tr><tr><td>true</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.validateGetSlots2ConfirmApponmentStep.usingCalenderDateWheneverVendorCreatedPurchaseOrderDcShouldGiveAvailabilityTimeAndConfirmAppointmentAndCreateAGRNAndValidate(io.cucumber.datatable.DataTable)">
+                <span>And using calender date whenever vendor created purchase order,Dc should give availability time,and confirm appointment and create a GRN and Validate</span>
+      <div><table class='markup-table table '><tr><td>truckType</td><td>truckNumber</td><td>driverName</td><td>driverNumber</td><td>dstSiteId</td><td>isPalletized</td></tr><tr><td>1109</td><td>KA12AA2653</td><td>krishna</td><td>987654321</td><td>1033</td><td>true</td></tr><tr><td>1109</td><td>KA12AA2653</td><td>krishna</td><td>987654321</td><td>1033</td><td>true</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(int)">
+                <span>Then Verify that status code be equal to 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Authorization_2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Authorization_2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>generate bearer token for vendor appointmet</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.generate bearer token for vendor appointmet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetPO</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetPO</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='117'>Get all the po's which are created in DC</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Get all the po's which are created in DC</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetslotsConfirmAppointmentAndCreateGRN</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetslotsConfirmAppointmentAndCreateGRN</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='140'>Get slots and confirm appontement and create GRN</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Get slots and confirm appontement and create GRN</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@CreateMultiplePosUsingExcel2</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateMultiplePosUsingExcel2</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Create a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Create a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Create a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Create a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Create a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Create a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@UpdateMultiplePosUsingExcel3</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateMultiplePosUsingExcel3</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Update a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Update a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>Update a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Update a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='95'>Update a multiple purchase orders using Excel</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.Update a multiple purchase orders using Excel</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetCalender</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetCalender</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:30:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='130'>get the calender about particular DC</a>
+<div class="">
+<span class="badge badge-default">Create a multiple purchase orders.get the calender about particular DC</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

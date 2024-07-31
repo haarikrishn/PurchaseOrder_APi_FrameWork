@@ -107,19 +107,19 @@ public class CreatePurchaseOrderSteps {
         excelUtils = new ExcelUtils(excelFile);
     }
 
-    @And("Give the sheet name to get the items for which purchase order has to be created {string}")
-    public void giveTheSheetNameToGetTheItemsForWhichPurchaseOrderHasToBeCreated(String sheetName) {
-        ExtentReportManager.logInfoDetails("Give the sheet name to get the items for which purchase order has to be created");
-        List<LinkedHashMap<String, Object>> items = excelUtils.getPurchaseOrderItems(sheetName);
-        requestPayload.put("items",items);
-    }
-
-    @And("Give the sheet name {string} and the number of items required to create purchase order {int}")
-    public void giveTheSheetNameAndTheNumberOfTasksToBeCreated(String sheetName, int requiredItems) {
-        ExtentReportManager.logInfoDetails("Sheet name is "+sheetName+" and the total required items are "+requiredItems);
-        List<LinkedHashMap<String, Object>> items = excelUtils.getPurchaseOrderItems(sheetName, requiredItems);
-        requestPayload.put("items",items);
-    }
+//    @And("Give the sheet name to get the items for which purchase order has to be created {string}")
+//    public void giveTheSheetNameToGetTheItemsForWhichPurchaseOrderHasToBeCreated(String sheetName) {
+//        ExtentReportManager.logInfoDetails("Give the sheet name to get the items for which purchase order has to be created");
+//        List<LinkedHashMap<String, Object>> items = excelUtils.getPurchaseOrderItems(sheetName);
+//        requestPayload.put("items",items);
+//    }
+//
+//    @And("Give the sheet name {string} and the number of items required to create purchase order {int}")
+//    public void giveTheSheetNameAndTheNumberOfTasksToBeCreated(String sheetName, int requiredItems) {
+//        ExtentReportManager.logInfoDetails("Sheet name is "+sheetName+" and the total required items are "+requiredItems);
+//        List<LinkedHashMap<String, Object>> items = excelUtils.getPurchaseOrderItems(sheetName, requiredItems);
+//        requestPayload.put("items",items);
+//    }
     
     @When("Requester calls the purchase order api endpoint to create a new purchase order")
     public void requesterCallsThePurchaseOrderApiEndpointToCreateANewPurchaseOrder() {
@@ -133,4 +133,8 @@ public class CreatePurchaseOrderSteps {
         CommonUtilities.setResponseInstance(response);
     }
 
+//
+//    @And("user add to  list of articles  {string} {string} {string} {string}to create po")
+//    public void userAddToListOfArticlesToCreatePo(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7) {
+//    }
 }

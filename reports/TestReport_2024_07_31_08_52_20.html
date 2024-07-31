@@ -1,0 +1,3606 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>D_Link API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">D_Link - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 31, 2024 08:52:20 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">generate bearer token for vendor appointmet</p>
+            <p class="text-sm">
+              <span>8:52:20 AM</span> / <span>00:00:05:435</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">generate bearer token for vendor appointmet</h5>
+<span class='badge badge-success'>07.31.2024 8:52:20 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:25 AM</span>
+<span class='badge badge-default'>00:00:05:435</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+          Base URL is : https://canary.id.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+          [Content-Type=application/json, origin=https://canary.id.dmartlink.com]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"nonce":"71e94eba-e2a0-4a8a-8e3e-7b0815ad641f","state":"40f6125c-a1b9-4795-a564-161bcf896d32","user_name":"harikrishna.medari@qualitrix.com","response_type":"code","redirect_url":"https://canary.dmartlink.com/app/po","scope":["openid"]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:21 AM</td>
+        <td>
+          Endpoint is : /api/precheck
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "nonce": "357005ce-367d-4999-8cec-99afa2e91dc8",
+    "password_less": true,
+    "expiry": "2024-07-31T03:27:22.910893792Z",
+    "length": 6,
+    "next": "OTP"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          PrecheckResponse 1739 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          Base URL is : https://canary.id.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          [Content-Type=application/json, origin=https://canary.id.dmartlink.com]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"otp":"111111","nonce":"357005ce-367d-4999-8cec-99afa2e91dc8"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:23 AM</td>
+        <td>
+          Endpoint is : /api/otp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "nonce": "44d23e55-1c91-4b65-8d46-a6237c39473b",
+    "next": "PIN"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Response Time otpcode is 341 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Base URL is : https://canary.id.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          [Content-Type=application/json, origin=https://canary.id.dmartlink.com]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"nonce":"44d23e55-1c91-4b65-8d46-a6237c39473b","pin":"1234"}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Endpoint is : /api/pin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "nonce": "860e774a-25ab-49fe-94c8-2343ef70ba0e",
+    "next": "CODE"
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Base URL is : https://canary.id.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          [Content-Type=application/json, origin=https://canary.id.dmartlink.com]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:24 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"nonce":"860e774a-25ab-49fe-94c8-2343ef70ba0e"}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "authorization_code": "e96ea8f8-7250-47eb-bb4e-0a249ff8e699",
+    "redirect_url": "https://canary.dmartlink.com/app/po/?status=authorized&authorization_code=e96ea8f8-7250-47eb-bb4e-0a249ff8e699&state=40f6125c-a1b9-4795-a564-161bcf896d32",
+    "unauthorized_url": "https://canary.dmartlink.com/app/po/?status=unauthorized",
+    "error_url": "https://canary.dmartlink.com/app/po/?status=unauthorized&error="
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          AuthcodeNonce is 337 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Base URL is : https://canary.id.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          [Content-Type=application/json, origin=https://canary.dmartlink.com]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"code":"e96ea8f8-7250-47eb-bb4e-0a249ff8e699","grant_type":"authorization_code"}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Endpoint is : /api/token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw",
+    "refreshToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IlJUIn0.eyJleHAiOjE3MjI1Njg5NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI5OGM1MmEyYi00YmM4LTQ0MjktOTkzNy02YjdiMmMyN2Q3NTgiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.e1MFLNIzJEJ57FUFJtBz_zpbC3x0xmYb7Py4kINgANk7WaAqnCdbtt02T-PG965xVAZqIPrMaYI4GntmJlpUTN4jfcpVdI1WGZkhXD6zANBuh3IXb7__46-W8yIWVpxkKLxIVohWSaq2Ksg5rRr6s-wQVY0rBe0KJ3XgZwiBBXME0eGm_NPg7PsNJImwJ_hz24gf4VQ1PjwX04mK5LIMtSq-OXbEYhXCwSy3RPJrDQJ8PuhfvnlxMQ0b5u5oQICex5AZy6amtfyaBVrt3zK-whZ69mANo--Ite5Z9_-k_kupvt2FhHAuAwE1Vq9HLOhBoMMJ7jbvBqCz-eWD0pQ_MQ"
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          VendorBearerToken 340 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a multiple  purchase orders using Excel</p>
+            <p class="text-sm">
+              <span>8:52:25 AM</span> / <span>00:00:04:346</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create a multiple purchase orders using Excel</h5>
+<span class='badge badge-success'>07.31.2024 8:52:25 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:30 AM</span>
+<span class='badge badge-default'>00:00:04:346</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:25 AM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          Requester calls the outbound delivery endpoint to create new delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9724594527, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"supplierCode":"100245","poNumber":"55903110432","companyCode":"ASPL","documentType":"ZANB","poDate":"20240731","buyerCode":"H10","buyerEmail":"phiroze.lakhani@dmartindia.com","termsOfDlv":[{"tdLine":"line 1: This is line one of terms of delivery.","tdFormat":"*"},{"tdLine1":"line 2: This the line tow of terms of delivery.","tdFormat1":"*"}],"items":[{"itemSeq":"0001","poDueDate":"20240803","matNumber":"200000013","ean":"8902080304059","articleDesc":"7 UP LEMON FLV-750ML","matGroup":"4LBCDRCLR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"40","basicPrice":"174","netPrice":"322","tot":"1","vendorDiscountPer":"8","vendorDiscountVal":"8","sgst":"2","cgst":"2","cess":"1","landedPrice":"43","storageSection":"F05","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0002","poDueDate":"20240803","matNumber":"200000012","ean":"8901725125172","articleDesc":"AASHIRVAAD CHILLI POWDER(500G)","matGroup":"2SPPWBPWC","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"180","basicPrice":"46","netPrice":"329","tot":"1","vendorDiscountPer":"6","vendorDiscountVal":"6","sgst":"2","cgst":"2","cess":"1","landedPrice":"10","storageSection":"F06","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0003","poDueDate":"20240803","matNumber":"300003715","ean":"4902430819688","articleDesc":"AMBI PUR CAR 2 RF 7ML AQ-NOS","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"67","netPrice":"328","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"5","cgst":"5","cess":"1","landedPrice":"22","storageSection":"F07","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0004","poDueDate":"20240803","matNumber":"300003689","ean":"4902430918329","articleDesc":"AMBI PUR EXOT JASMINE AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"58","netPrice":"350","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"1","cgst":"1","cess":"1","landedPrice":"22","storageSection":"F08","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0005","poDueDate":"20240803","matNumber":"300003693","ean":"4902430918305","articleDesc":"AMBI PUR LAVEND BOUQU AIR FRE-275G","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"57","netPrice":"322","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"5","cgst":"5","cess":"1","landedPrice":"45","storageSection":"F09","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0006","poDueDate":"20240803","matNumber":"300003694","ean":"4902430918336","articleDesc":"AMBI PUR SWET BERRIES AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"132","netPrice":"302","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"2","cgst":"2","cess":"1","landedPrice":"47","storageSection":"F10","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0007","poDueDate":"20240803","matNumber":"300003700","ean":"4902430918558","articleDesc":"AMBIPUR CAR EXO JASMINE REFIL-7.5ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"199","basicPrice":"30","netPrice":"329","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"2","cgst":"2","cess":"1","landedPrice":"14","storageSection":"F11","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0008","poDueDate":"20240803","matNumber":"300003702","ean":"4902430819718","articleDesc":"AMBIPUR CAR EXO JASMINE UNIT-7.5ML","matGroup":"5AFCFRMCH","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"7","netPrice":"335","tot":"1","vendorDiscountPer":"7","vendorDiscountVal":"7","sgst":"4","cgst":"4","cess":"1","landedPrice":"41","storageSection":"F12","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0009","poDueDate":"20240803","matNumber":"300003704","ean":"4902430819671","articleDesc":"AMBIPUR CAR STATER LAVENDER (7.5ML)","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"167","netPrice":"342","tot":"1","vendorDiscountPer":"2","vendorDiscountVal":"2","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F13","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0010","poDueDate":"20240803","matNumber":"300003745","ean":"4902430819664","articleDesc":"AMBIPUR CAR VANILA BOUQ STA KIT-7ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"93","netPrice":"300","tot":"1","vendorDiscountPer":"3","vendorDiscountVal":"3","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F14","stockPlacement":"HRS","leQty":"12","hsn":"17049030"}]}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:28 AM</td>
+        <td>
+          Endpoint is : /pi-handler/po/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:29 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:29 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:29 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:29 AM</td>
+        <td>
+          Response Time is 818 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:30 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:30 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:30 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a multiple  purchase orders using Excel</p>
+            <p class="text-sm">
+              <span>8:52:30 AM</span> / <span>00:00:02:410</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create a multiple purchase orders using Excel</h5>
+<span class='badge badge-success'>07.31.2024 8:52:30 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:32 AM</span>
+<span class='badge badge-default'>00:00:02:410</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:30 AM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Requester calls the outbound delivery endpoint to create new delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9419905011, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"supplierCode":"100245","poNumber":"55325225916","companyCode":"ASPL","documentType":"ZANB","poDate":"20240731","buyerCode":"H10","buyerEmail":"phiroze.lakhani@dmartindia.com","termsOfDlv":[{"tdLine":"line 1: This is line one of terms of delivery.","tdFormat":"*"},{"tdLine1":"line 2: This the line tow of terms of delivery.","tdFormat1":"*"}],"items":[{"itemSeq":"0001","poDueDate":"20240803","matNumber":"200000013","ean":"8902080304059","articleDesc":"7 UP LEMON FLV-750ML","matGroup":"4LBCDRCLR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"40","basicPrice":"174","netPrice":"322","tot":"1","vendorDiscountPer":"8","vendorDiscountVal":"8","sgst":"2","cgst":"2","cess":"1","landedPrice":"43","storageSection":"F05","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0002","poDueDate":"20240803","matNumber":"200000012","ean":"8901725125172","articleDesc":"AASHIRVAAD CHILLI POWDER(500G)","matGroup":"2SPPWBPWC","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"180","basicPrice":"46","netPrice":"329","tot":"1","vendorDiscountPer":"6","vendorDiscountVal":"6","sgst":"2","cgst":"2","cess":"1","landedPrice":"10","storageSection":"F06","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0003","poDueDate":"20240803","matNumber":"300003715","ean":"4902430819688","articleDesc":"AMBI PUR CAR 2 RF 7ML AQ-NOS","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"67","netPrice":"328","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"5","cgst":"5","cess":"1","landedPrice":"22","storageSection":"F07","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0004","poDueDate":"20240803","matNumber":"300003689","ean":"4902430918329","articleDesc":"AMBI PUR EXOT JASMINE AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"58","netPrice":"350","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"1","cgst":"1","cess":"1","landedPrice":"22","storageSection":"F08","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0005","poDueDate":"20240803","matNumber":"300003693","ean":"4902430918305","articleDesc":"AMBI PUR LAVEND BOUQU AIR FRE-275G","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"57","netPrice":"322","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"5","cgst":"5","cess":"1","landedPrice":"45","storageSection":"F09","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0006","poDueDate":"20240803","matNumber":"300003694","ean":"4902430918336","articleDesc":"AMBI PUR SWET BERRIES AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"279","basicPrice":"132","netPrice":"302","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"2","cgst":"2","cess":"1","landedPrice":"47","storageSection":"F10","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0007","poDueDate":"20240803","matNumber":"300003700","ean":"4902430918558","articleDesc":"AMBIPUR CAR EXO JASMINE REFIL-7.5ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"199","basicPrice":"30","netPrice":"329","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"2","cgst":"2","cess":"1","landedPrice":"14","storageSection":"F11","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0008","poDueDate":"20240803","matNumber":"300003702","ean":"4902430819718","articleDesc":"AMBIPUR CAR EXO JASMINE UNIT-7.5ML","matGroup":"5AFCFRMCH","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"7","netPrice":"335","tot":"1","vendorDiscountPer":"7","vendorDiscountVal":"7","sgst":"4","cgst":"4","cess":"1","landedPrice":"41","storageSection":"F12","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0009","poDueDate":"20240803","matNumber":"300003704","ean":"4902430819671","articleDesc":"AMBIPUR CAR STATER LAVENDER (7.5ML)","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"167","netPrice":"342","tot":"1","vendorDiscountPer":"2","vendorDiscountVal":"2","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F13","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0010","poDueDate":"20240803","matNumber":"300003745","ean":"4902430819664","articleDesc":"AMBIPUR CAR VANILA BOUQ STA KIT-7ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"36","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.50","volume":"0.05","mrp":"299","basicPrice":"93","netPrice":"300","tot":"1","vendorDiscountPer":"3","vendorDiscountVal":"3","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F14","stockPlacement":"HRS","leQty":"12","hsn":"17049030"}]}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Endpoint is : /pi-handler/po/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:31 AM</td>
+        <td>
+          Response Time is 446 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update a multiple  purchase orders using Excel</p>
+            <p class="text-sm">
+              <span>8:52:32 AM</span> / <span>00:00:02:192</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update a multiple purchase orders using Excel</h5>
+<span class='badge badge-success'>07.31.2024 8:52:32 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:34 AM</span>
+<span class='badge badge-default'>00:00:02:192</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          poNumbersList is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          poNumbersList 55903110432=====update0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          poNumbersList is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:32 AM</td>
+        <td>
+          poNumbersList 55325225916=====update1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9387929175, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"supplierCode":"100245","poNumber":"55903110432","companyCode":"ASPL","documentType":"ZANB","poDate":"20240731","buyerCode":"H10","buyerEmail":"phiroze.lakhani@dmartindia.com","termsOfDlv":[{"tdLine":"line 1: This is line one of terms of delivery.","tdFormat":"*"},{"tdLine1":"line 2: This the line tow of terms of delivery.","tdFormat1":"*"}],"items":[{"itemSeq":"0001","poDueDate":"20240803","matNumber":"200000013","ean":"8902080304059","articleDesc":"7 UP LEMON FLV-750ML","matGroup":"4LBCDRCLR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"40","basicPrice":"174","netPrice":"322","tot":"1","vendorDiscountPer":"8","vendorDiscountVal":"8","sgst":"2","cgst":"2","cess":"1","landedPrice":"43","storageSection":"F05","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0002","poDueDate":"20240803","matNumber":"200000012","ean":"8901725125172","articleDesc":"AASHIRVAAD CHILLI POWDER(500G)","matGroup":"2SPPWBPWC","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"180","basicPrice":"46","netPrice":"329","tot":"1","vendorDiscountPer":"6","vendorDiscountVal":"6","sgst":"2","cgst":"2","cess":"1","landedPrice":"10","storageSection":"F06","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0003","poDueDate":"20240803","matNumber":"300003715","ean":"4902430819688","articleDesc":"AMBI PUR CAR 2 RF 7ML AQ-NOS","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"67","netPrice":"328","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"5","cgst":"5","cess":"1","landedPrice":"22","storageSection":"F07","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0004","poDueDate":"20240803","matNumber":"300003689","ean":"4902430918329","articleDesc":"AMBI PUR EXOT JASMINE AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"58","netPrice":"350","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"1","cgst":"1","cess":"1","landedPrice":"22","storageSection":"F08","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0005","poDueDate":"20240803","matNumber":"300003693","ean":"4902430918305","articleDesc":"AMBI PUR LAVEND BOUQU AIR FRE-275G","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"57","netPrice":"322","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"5","cgst":"5","cess":"1","landedPrice":"45","storageSection":"F09","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0006","poDueDate":"20240803","matNumber":"300003694","ean":"4902430918336","articleDesc":"AMBI PUR SWET BERRIES AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"132","netPrice":"302","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"2","cgst":"2","cess":"1","landedPrice":"47","storageSection":"F10","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0007","poDueDate":"20240803","matNumber":"300003700","ean":"4902430918558","articleDesc":"AMBIPUR CAR EXO JASMINE REFIL-7.5ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"199","basicPrice":"30","netPrice":"329","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"2","cgst":"2","cess":"1","landedPrice":"14","storageSection":"F11","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0008","poDueDate":"20240803","matNumber":"300003702","ean":"4902430819718","articleDesc":"AMBIPUR CAR EXO JASMINE UNIT-7.5ML","matGroup":"5AFCFRMCH","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"7","netPrice":"335","tot":"1","vendorDiscountPer":"7","vendorDiscountVal":"7","sgst":"4","cgst":"4","cess":"1","landedPrice":"41","storageSection":"F12","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0009","poDueDate":"20240803","matNumber":"300003704","ean":"4902430819671","articleDesc":"AMBIPUR CAR STATER LAVENDER (7.5ML)","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"167","netPrice":"342","tot":"1","vendorDiscountPer":"2","vendorDiscountVal":"2","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F13","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0010","poDueDate":"20240803","matNumber":"300003745","ean":"4902430819664","articleDesc":"AMBIPUR CAR VANILA BOUQ STA KIT-7ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"93","netPrice":"300","tot":"1","vendorDiscountPer":"3","vendorDiscountVal":"3","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F14","stockPlacement":"HRS","leQty":"12","hsn":"17049030"}]}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Endpoint is : /pi-handler/po/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:33 AM</td>
+        <td>
+          Response Time is 337 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="97"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update a multiple  purchase orders using Excel</p>
+            <p class="text-sm">
+              <span>8:52:34 AM</span> / <span>00:00:02:144</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update a multiple purchase orders using Excel</h5>
+<span class='badge badge-success'>07.31.2024 8:52:34 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:36 AM</span>
+<span class='badge badge-default'>00:00:02:144</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=97</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          poNumbersList is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          poNumbersList 55903110432=====update0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          poNumbersList is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:34 AM</td>
+        <td>
+          poNumbersList 55325225916=====update1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9930331960, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"supplierCode":"100245","poNumber":"55325225916","companyCode":"ASPL","documentType":"ZANB","poDate":"20240731","buyerCode":"H10","buyerEmail":"phiroze.lakhani@dmartindia.com","termsOfDlv":[{"tdLine":"line 1: This is line one of terms of delivery.","tdFormat":"*"},{"tdLine1":"line 2: This the line tow of terms of delivery.","tdFormat1":"*"}],"items":[{"itemSeq":"0001","poDueDate":"20240803","matNumber":"200000013","ean":"8902080304059","articleDesc":"7 UP LEMON FLV-750ML","matGroup":"4LBCDRCLR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"40","basicPrice":"174","netPrice":"322","tot":"1","vendorDiscountPer":"8","vendorDiscountVal":"8","sgst":"2","cgst":"2","cess":"1","landedPrice":"43","storageSection":"F05","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0002","poDueDate":"20240803","matNumber":"200000012","ean":"8901725125172","articleDesc":"AASHIRVAAD CHILLI POWDER(500G)","matGroup":"2SPPWBPWC","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"180","basicPrice":"46","netPrice":"329","tot":"1","vendorDiscountPer":"6","vendorDiscountVal":"6","sgst":"2","cgst":"2","cess":"1","landedPrice":"10","storageSection":"F06","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0003","poDueDate":"20240803","matNumber":"300003715","ean":"4902430819688","articleDesc":"AMBI PUR CAR 2 RF 7ML AQ-NOS","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"67","netPrice":"328","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"5","cgst":"5","cess":"1","landedPrice":"22","storageSection":"F07","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0004","poDueDate":"20240803","matNumber":"300003689","ean":"4902430918329","articleDesc":"AMBI PUR EXOT JASMINE AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"58","netPrice":"350","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"1","cgst":"1","cess":"1","landedPrice":"22","storageSection":"F08","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0005","poDueDate":"20240803","matNumber":"300003693","ean":"4902430918305","articleDesc":"AMBI PUR LAVEND BOUQU AIR FRE-275G","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"57","netPrice":"322","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"5","cgst":"5","cess":"1","landedPrice":"45","storageSection":"F09","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0006","poDueDate":"20240803","matNumber":"300003694","ean":"4902430918336","articleDesc":"AMBI PUR SWET BERRIES AIR FRE(275G)","matGroup":"5AFHFRSPR","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"279","basicPrice":"132","netPrice":"302","tot":"1","vendorDiscountPer":"1","vendorDiscountVal":"1","sgst":"2","cgst":"2","cess":"1","landedPrice":"47","storageSection":"F10","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0007","poDueDate":"20240803","matNumber":"300003700","ean":"4902430918558","articleDesc":"AMBIPUR CAR EXO JASMINE REFIL-7.5ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"199","basicPrice":"30","netPrice":"329","tot":"1","vendorDiscountPer":"9","vendorDiscountVal":"9","sgst":"2","cgst":"2","cess":"1","landedPrice":"14","storageSection":"F11","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0008","poDueDate":"20240803","matNumber":"300003702","ean":"4902430819718","articleDesc":"AMBIPUR CAR EXO JASMINE UNIT-7.5ML","matGroup":"5AFCFRMCH","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"7","netPrice":"335","tot":"1","vendorDiscountPer":"7","vendorDiscountVal":"7","sgst":"4","cgst":"4","cess":"1","landedPrice":"41","storageSection":"F12","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0009","poDueDate":"20240803","matNumber":"300003704","ean":"4902430819671","articleDesc":"AMBIPUR CAR STATER LAVENDER (7.5ML)","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"167","netPrice":"342","tot":"1","vendorDiscountPer":"2","vendorDiscountVal":"2","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F13","stockPlacement":"HRS","leQty":"12","hsn":"17049030"},{"itemSeq":"0010","poDueDate":"20240803","matNumber":"300003745","ean":"4902430819664","articleDesc":"AMBIPUR CAR VANILA BOUQ STA KIT-7ML","matGroup":"5AFCFRREF","siteId":"1033","qty":"48","uom":"EA","isDeleted":false,"caselot":"12","weight":"0.60","volume":"0.06","mrp":"299","basicPrice":"93","netPrice":"300","tot":"1","vendorDiscountPer":"3","vendorDiscountVal":"3","sgst":"3","cgst":"3","cess":"1","landedPrice":"13","storageSection":"F14","stockPlacement":"HRS","leQty":"12","hsn":"17049030"}]}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Endpoint is : /pi-handler/po/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:35 AM</td>
+        <td>
+          Response Time is 342 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:36 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:36 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:36 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="119"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get all the po's which are created in DC</p>
+            <p class="text-sm">
+              <span>8:52:36 AM</span> / <span>00:00:06:117</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get all the po's which are created in DC</h5>
+<span class='badge badge-success'>07.31.2024 8:52:36 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:43 AM</span>
+<span class='badge badge-default'>00:00:06:117</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=119</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:37 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:37 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:37 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:37 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/po/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:38 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({
+    "poNumber": "55903110432",
+    "documentType": "ZANB",
+    "companyCode": "ASPL",
+    "poDate": "2024-07-31T00:00:00Z",
+    "supplierDetails": {
+        "supplierCode": "",
+        "vendorCode": "100245",
+        "name": "H R ENTERPRISES PVT LTD",
+        "email": "v-richa.agarwal@dmartlabs.com",
+        "address": "ANDHERI",
+        "cin": "",
+        "fax": "778897889",
+        "phone": "8800990099",
+        "gstIn": "27AAZPS9583K1Z9",
+        "attn": "Accounts payable",
+        "fssai": "12345678901234"
+    },
+    "buyerDetails": {
+        "id": 0,
+        "name": "BARODA GM DC",
+        "phone": "9876543211",
+        "email": "hari121@gmail.com",
+        "address": "Avenue Supermarts Ltd.   \nHorizon Industrial park,     \nVill.: Bamangam, Tal.: Karjan,   \nDist.: Vadodara -391243",
+        "fax": 0,
+        "gstIn": "27AAZPS9583KGSTIN",
+        "cin": "27AAZPS9583KCIN",
+        "attn": "",
+        "latitude": 73.158562,
+        "longitude": 22.180861,
+        "buyerCode": "H10",
+        "state": "Gujarat",
+        "siteId": "1033"
+    },
+    "items": [
+        {
+            "itemSeq": 1,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104321",
+            "matNumber": "200000013",
+            "ean": "8902080304059",
+            "articleDesc": "7 UP LEMON FLV-750ML",
+            "matGroup": "4LBCDRCLR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 40,
+            "basicPrice": 174,
+            "netPrice": 322,
+            "tot": 1,
+            "vendorDiscountPer": 8,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 43,
+            "storageSection": "F05",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "2",
+                "categoryName": "Br Grocery",
+                "subCategory1Code": "2CR",
+                "subCategory1Name": "Br Grocery Br Cereals",
+                "subCategory2Code": "2CRPCR",
+                "subCategory2Name": "Br Grocery Br Cereals Br Processed Cerea",
+                "subCategory3Code": "2CRPCRWHA",
+                "subCategory3Name": "Br Wheat Atta",
+                "subCategory4Code": "2CRPCRWHA",
+                "subCategory4Name": "Br Wheat Atta",
+                "subCategory5Code": "2CRPCRWHA",
+                "subCategory5Name": "2CRPCRWHA"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 10,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "5590311043210",
+            "matNumber": "300003745",
+            "ean": "4902430819664",
+            "articleDesc": "AMBIPUR CAR VANILA BOUQ STA KIT-7ML",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 93,
+            "netPrice": 300,
+            "tot": 1,
+            "vendorDiscountPer": 3,
+            "vendorDisVal": 0,
+            "sgst": 3,
+            "cgst": 3,
+            "cess": 1,
+            "landedPrice": 13,
+            "storageSection": "F14",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 2,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104322",
+            "matNumber": "200000012",
+            "ean": "8901725125172",
+            "articleDesc": "AASHIRVAAD CHILLI POWDER(500G)",
+            "matGroup": "2SPPWBPWC",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 180,
+            "basicPrice": 46,
+            "netPrice": 329,
+            "tot": 1,
+            "vendorDiscountPer": 6,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 10,
+            "storageSection": "F06",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "2",
+                "categoryName": "Br Grocery",
+                "subCategory1Code": "2CR",
+                "subCategory1Name": "Br Grocery Br Cereals",
+                "subCategory2Code": "2CRPCR",
+                "subCategory2Name": "Br Grocery Br Cereals Br Processed Cerea",
+                "subCategory3Code": "2CRPCRWHA",
+                "subCategory3Name": "Br Wheat Atta",
+                "subCategory4Code": "2CRPCRWHA",
+                "subCategory4Name": "Br Wheat Atta",
+                "subCategory5Code": "2CRPCRWHA",
+                "subCategory5Name": "2CRPCRWHA"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 3,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104323",
+            "matNumber": "300003715",
+            "ean": "4902430819688",
+            "articleDesc": "AMBI PUR CAR 2 RF 7ML AQ-NOS",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 67,
+            "netPrice": 328,
+            "tot": 1,
+            "vendorDiscountPer": 1,
+            "vendorDisVal": 0,
+            "sgst": 5,
+            "cgst": 5,
+            "cess": 1,
+            "landedPrice": 22,
+            "storageSection": "F07",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 4,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104324",
+            "matNumber": "300003689",
+            "ean": "4902430918329",
+            "articleDesc": "AMBI PUR EXOT JASMINE AIR FRE(275G)",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 58,
+            "netPrice": 350,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 1,
+            "cgst": 1,
+            "cess": 1,
+            "landedPrice": 22,
+            "storageSection": "F08",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 5,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104325",
+            "matNumber": "300003693",
+            "ean": "4902430918305",
+            "articleDesc": "AMBI PUR LAVEND BOUQU AIR FRE-275G",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 57,
+            "netPrice": 322,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 5,
+            "cgst": 5,
+            "cess": 1,
+            "landedPrice": 45,
+            "storageSection": "F09",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 6,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104326",
+            "matNumber": "300003694",
+            "ean": "4902430918336",
+            "articleDesc": "AMBI PUR SWET BERRIES AIR FRE(275G)",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 132,
+            "netPrice": 302,
+            "tot": 1,
+            "vendorDiscountPer": 1,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 47,
+            "storageSection": "F10",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 7,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104327",
+            "matNumber": "300003700",
+            "ean": "4902430918558",
+            "articleDesc": "AMBIPUR CAR EXO JASMINE REFIL-7.5ML",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 199,
+            "basicPrice": 30,
+            "netPrice": 329,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 14,
+            "storageSection": "F11",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 8,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104328",
+            "matNumber": "300003702",
+            "ean": "4902430819718",
+            "articleDesc": "AMBIPUR CAR EXO JASMINE UNIT-7.5ML",
+            "matGroup": "5AFCFRMCH",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 7,
+            "netPrice": 335,
+            "tot": 1,
+            "vendorDiscountPer": 7,
+            "vendorDisVal": 0,
+            "sgst": 4,
+            "cgst": 4,
+            "cess": 1,
+            "landedPrice": 41,
+            "storageSection": "F12",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 9,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "559031104329",
+            "matNumber": "300003704",
+            "ean": "4902430819671",
+            "articleDesc": "AMBIPUR CAR STATER LAVENDER (7.5ML)",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 167,
+            "netPrice": 342,
+            "tot": 1,
+            "vendorDiscountPer": 2,
+            "vendorDisVal": 0,
+            "sgst": 3,
+            "cgst": 3,
+            "cess": 1,
+            "landedPrice": 13,
+            "storageSection": "F13",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        }
+    ],
+    "poStatus": "NEW",
+    "poMinDueDate": "2024-08-03T00:00:00Z",
+    "poMaxDueDate": "2024-08-03T00:00:00Z",
+    "PODocument": "https://storage.cloud.google.com/dlink-po-pdf/pdf/55903110432_1.pdf",
+    "hasAppointments": false,
+    "canScheduleAppointments": true,
+    "poBufferMinDueDate": "2024-08-02T00:00:00Z",
+    "poBufferMaxDueDate": "2024-08-11T00:00:00Z",
+    "totalValueInRs": "",
+    "totalQtyofItems": 0,
+    "totalAmount": 0,
+    "totalBoxes": 0,
+    "barcode": "",
+    "bucketName": "dlink-po-pdf",
+    "folderName": "pdf",
+    "file": "55903110432_1.pdf",
+    "isUpdated": true,
+    "IsComplete": true,
+    "dstSiteId": "1033",
+    "buyerEmail": "phiroze.lakhani@dmartindia.com",
+    "termsOfDlv": [
+        {
+            "tdLine": "line 1: This is line one of terms of delivery.",
+            "tdFormat": "*"
+        },
+        {
+            "tdLine": "",
+            "tdFormat": ""
+        }
+    ],
+    "isDeleted": false,
+    "isPOReturned": false,
+    "totalMRP": 0
+}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:38 AM</td>
+        <td>
+          Response Time to get a dock is 753 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:40 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:40 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:40 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:40 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/po/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:41 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "poNumber": "55325225916",
+    "documentType": "ZANB",
+    "companyCode": "ASPL",
+    "poDate": "2024-07-31T00:00:00Z",
+    "supplierDetails": {
+        "supplierCode": "",
+        "vendorCode": "100245",
+        "name": "H R ENTERPRISES PVT LTD",
+        "email": "v-richa.agarwal@dmartlabs.com",
+        "address": "ANDHERI",
+        "cin": "",
+        "fax": "778897889",
+        "phone": "8800990099",
+        "gstIn": "27AAZPS9583K1Z9",
+        "attn": "Accounts payable",
+        "fssai": "12345678901234"
+    },
+    "buyerDetails": {
+        "id": 0,
+        "name": "BARODA GM DC",
+        "phone": "9876543211",
+        "email": "hari121@gmail.com",
+        "address": "Avenue Supermarts Ltd.   \nHorizon Industrial park,     \nVill.: Bamangam, Tal.: Karjan,   \nDist.: Vadodara -391243",
+        "fax": 0,
+        "gstIn": "27AAZPS9583KGSTIN",
+        "cin": "27AAZPS9583KCIN",
+        "attn": "",
+        "latitude": 73.158562,
+        "longitude": 22.180861,
+        "buyerCode": "H10",
+        "state": "Gujarat",
+        "siteId": "1033"
+    },
+    "items": [
+        {
+            "itemSeq": 1,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259161",
+            "matNumber": "200000013",
+            "ean": "8902080304059",
+            "articleDesc": "7 UP LEMON FLV-750ML",
+            "matGroup": "4LBCDRCLR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 40,
+            "basicPrice": 174,
+            "netPrice": 322,
+            "tot": 1,
+            "vendorDiscountPer": 8,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 43,
+            "storageSection": "F05",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "2",
+                "categoryName": "Br Grocery",
+                "subCategory1Code": "2CR",
+                "subCategory1Name": "Br Grocery Br Cereals",
+                "subCategory2Code": "2CRPCR",
+                "subCategory2Name": "Br Grocery Br Cereals Br Processed Cerea",
+                "subCategory3Code": "2CRPCRWHA",
+                "subCategory3Name": "Br Wheat Atta",
+                "subCategory4Code": "2CRPCRWHA",
+                "subCategory4Name": "Br Wheat Atta",
+                "subCategory5Code": "2CRPCRWHA",
+                "subCategory5Name": "2CRPCRWHA"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 10,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "5532522591610",
+            "matNumber": "300003745",
+            "ean": "4902430819664",
+            "articleDesc": "AMBIPUR CAR VANILA BOUQ STA KIT-7ML",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 93,
+            "netPrice": 300,
+            "tot": 1,
+            "vendorDiscountPer": 3,
+            "vendorDisVal": 0,
+            "sgst": 3,
+            "cgst": 3,
+            "cess": 1,
+            "landedPrice": 13,
+            "storageSection": "F14",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 2,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259162",
+            "matNumber": "200000012",
+            "ean": "8901725125172",
+            "articleDesc": "AASHIRVAAD CHILLI POWDER(500G)",
+            "matGroup": "2SPPWBPWC",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 180,
+            "basicPrice": 46,
+            "netPrice": 329,
+            "tot": 1,
+            "vendorDiscountPer": 6,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 10,
+            "storageSection": "F06",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "2",
+                "categoryName": "Br Grocery",
+                "subCategory1Code": "2CR",
+                "subCategory1Name": "Br Grocery Br Cereals",
+                "subCategory2Code": "2CRPCR",
+                "subCategory2Name": "Br Grocery Br Cereals Br Processed Cerea",
+                "subCategory3Code": "2CRPCRWHA",
+                "subCategory3Name": "Br Wheat Atta",
+                "subCategory4Code": "2CRPCRWHA",
+                "subCategory4Name": "Br Wheat Atta",
+                "subCategory5Code": "2CRPCRWHA",
+                "subCategory5Name": "2CRPCRWHA"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 3,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259163",
+            "matNumber": "300003715",
+            "ean": "4902430819688",
+            "articleDesc": "AMBI PUR CAR 2 RF 7ML AQ-NOS",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 67,
+            "netPrice": 328,
+            "tot": 1,
+            "vendorDiscountPer": 1,
+            "vendorDisVal": 0,
+            "sgst": 5,
+            "cgst": 5,
+            "cess": 1,
+            "landedPrice": 22,
+            "storageSection": "F07",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 4,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259164",
+            "matNumber": "300003689",
+            "ean": "4902430918329",
+            "articleDesc": "AMBI PUR EXOT JASMINE AIR FRE(275G)",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 58,
+            "netPrice": 350,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 1,
+            "cgst": 1,
+            "cess": 1,
+            "landedPrice": 22,
+            "storageSection": "F08",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 5,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259165",
+            "matNumber": "300003693",
+            "ean": "4902430918305",
+            "articleDesc": "AMBI PUR LAVEND BOUQU AIR FRE-275G",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 57,
+            "netPrice": 322,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 5,
+            "cgst": 5,
+            "cess": 1,
+            "landedPrice": 45,
+            "storageSection": "F09",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 6,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259166",
+            "matNumber": "300003694",
+            "ean": "4902430918336",
+            "articleDesc": "AMBI PUR SWET BERRIES AIR FRE(275G)",
+            "matGroup": "5AFHFRSPR",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 279,
+            "basicPrice": 132,
+            "netPrice": 302,
+            "tot": 1,
+            "vendorDiscountPer": 1,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 47,
+            "storageSection": "F10",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 7,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259167",
+            "matNumber": "300003700",
+            "ean": "4902430918558",
+            "articleDesc": "AMBIPUR CAR EXO JASMINE REFIL-7.5ML",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 199,
+            "basicPrice": 30,
+            "netPrice": 329,
+            "tot": 1,
+            "vendorDiscountPer": 9,
+            "vendorDisVal": 0,
+            "sgst": 2,
+            "cgst": 2,
+            "cess": 1,
+            "landedPrice": 14,
+            "storageSection": "F11",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 8,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259168",
+            "matNumber": "300003702",
+            "ean": "4902430819718",
+            "articleDesc": "AMBIPUR CAR EXO JASMINE UNIT-7.5ML",
+            "matGroup": "5AFCFRMCH",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 7,
+            "netPrice": 335,
+            "tot": 1,
+            "vendorDiscountPer": 7,
+            "vendorDisVal": 0,
+            "sgst": 4,
+            "cgst": 4,
+            "cess": 1,
+            "landedPrice": 41,
+            "storageSection": "F12",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        },
+        {
+            "itemSeq": 9,
+            "poDueDate": "2024-08-03T00:00:00Z",
+            "poItemNumber": "553252259169",
+            "matNumber": "300003704",
+            "ean": "4902430819671",
+            "articleDesc": "AMBIPUR CAR STATER LAVENDER (7.5ML)",
+            "matGroup": "5AFCFRREF",
+            "siteId": "1033",
+            "isDeleted": false,
+            "qty": 48,
+            "caselot": 12,
+            "weight": 0.6,
+            "volume": 0.06,
+            "mrp": 299,
+            "basicPrice": 167,
+            "netPrice": 342,
+            "tot": 1,
+            "vendorDiscountPer": 2,
+            "vendorDisVal": 0,
+            "sgst": 3,
+            "cgst": 3,
+            "cess": 1,
+            "landedPrice": 13,
+            "storageSection": "F13",
+            "stockPlacement": "HRS",
+            "leQty": 12,
+            "grnQty": 0,
+            "hsn": "17049030",
+            "uom": "EA",
+            "pendingQuantity": 48,
+            "hasAppointment": false,
+            "totalAmountforArticles": 0,
+            "boxesforArticle": 0,
+            "categories": {
+                "categoryCode": "3",
+                "categoryName": "Counters",
+                "subCategory1Code": "3PD",
+                "subCategory1Name": "Counters Paidup",
+                "subCategory2Code": "3PDIPC",
+                "subCategory2Name": "Counters Paidup (I)Paidup Counter",
+                "subCategory3Code": "3PDIPCCOS",
+                "subCategory3Name": "Cosmetics",
+                "subCategory4Code": "3PDIPCCOS",
+                "subCategory4Name": "Cosmetics",
+                "subCategory5Code": "3PDIPCCOS",
+                "subCategory5Name": "3PDIPCCOS"
+            },
+            "serialNo": 0,
+            "poItemDelivered": false,
+            "canDisplay": true,
+            "unloadingTime": 0
+        }
+    ],
+    "poStatus": "NEW",
+    "poMinDueDate": "2024-08-03T00:00:00Z",
+    "poMaxDueDate": "2024-08-03T00:00:00Z",
+    "PODocument": "https://storage.cloud.google.com/dlink-po-pdf/pdf/55325225916_1.pdf",
+    "hasAppointments": false,
+    "canScheduleAppointments": true,
+    "poBufferMinDueDate": "2024-08-02T00:00:00Z",
+    "poBufferMaxDueDate": "2024-08-11T00:00:00Z",
+    "totalValueInRs": "",
+    "totalQtyofItems": 0,
+    "totalAmount": 0,
+    "totalBoxes": 0,
+    "barcode": "",
+    "bucketName": "dlink-po-pdf",
+    "folderName": "pdf",
+    "file": "55325225916_1.pdf",
+    "isUpdated": true,
+    "IsComplete": true,
+    "dstSiteId": "1033",
+    "buyerEmail": "phiroze.lakhani@dmartindia.com",
+    "termsOfDlv": [
+        {
+            "tdLine": "line 1: This is line one of terms of delivery.",
+            "tdFormat": "*"
+        },
+        {
+            "tdLine": "",
+            "tdFormat": ""
+        }
+    ],
+    "isDeleted": false,
+    "isPOReturned": false,
+    "totalMRP": 0
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:41 AM</td>
+        <td>
+          Response Time to get a dock is 781 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:42 AM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:42 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:42 AM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:42 AM</td>
+        <td>
+          verify that schema should be equal po.jsonfor po
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+           Schema is pass 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="132"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">get the calender about particular DC</p>
+            <p class="text-sm">
+              <span>8:52:43 AM</span> / <span>00:00:00:360</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">get the calender about particular DC</h5>
+<span class='badge badge-success'>07.31.2024 8:52:43 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:43 AM</span>
+<span class='badge badge-default'>00:00:00:360</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=132</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({"po":[{"poNumber":"55903110432","articles":[{"poItemNumber":"559031104321","qty":48},{"poItemNumber":"5590311043210","qty":48},{"poItemNumber":"559031104322","qty":48},{"poItemNumber":"559031104323","qty":48},{"poItemNumber":"559031104324","qty":48},{"poItemNumber":"559031104325","qty":48},{"poItemNumber":"559031104326","qty":48},{"poItemNumber":"559031104327","qty":48},{"poItemNumber":"559031104328","qty":48},{"poItemNumber":"559031104329","qty":48}]},{"poNumber":"55325225916","articles":[{"poItemNumber":"553252259161","qty":48},{"poItemNumber":"5532522591610","qty":48},{"poItemNumber":"553252259162","qty":48},{"poItemNumber":"553252259163","qty":48},{"poItemNumber":"553252259164","qty":48},{"poItemNumber":"553252259165","qty":48},{"poItemNumber":"553252259166","qty":48},{"poItemNumber":"553252259167","qty":48},{"poItemNumber":"553252259168","qty":48},{"poItemNumber":"553252259169","qty":48}]}]}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/availability/calendar/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create([
+    "2024-08-02T00:00:00Z",
+    "2024-08-03T00:00:00Z",
+    "2024-08-04T00:00:00Z",
+    "2024-08-05T00:00:00Z",
+    "2024-08-06T00:00:00Z",
+    "2024-08-07T00:00:00Z",
+    "2024-08-08T00:00:00Z",
+    "2024-08-09T00:00:00Z",
+    "2024-08-10T00:00:00Z",
+    "2024-08-11T00:00:00Z"
+]); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Response Time to get a calender is 346 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="142"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get slots and confirm appontement and create GRN</p>
+            <p class="text-sm">
+              <span>8:52:43 AM</span> / <span>00:00:09:248</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get slots and confirm appontement and create GRN</h5>
+<span class='badge badge-success'>07.31.2024 8:52:43 AM</span>
+<span class='badge badge-danger'>07.31.2024 8:52:52 AM</span>
+<span class='badge badge-default'>00:00:09:248</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=142</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          poNumbersList 55903110432=====GetSlotsConfirmApponment0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          poNumbersList 55325225916=====GetSlotsConfirmApponment1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=9903585403]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({"date":"2024-08-02T00:00:00Z","siteId":"1033","po":[{"poNumber":"55903110432","items":[{"poItemNumber":"559031104321","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5590311043210","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104322","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104323","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104324","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104325","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104326","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104327","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104328","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104329","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}]}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:43 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/availability/slots/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          poNumbersList 55903110432=====GetSlotsConfirmApponment0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          poNumbersList 55325225916=====GetSlotsConfirmApponment1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=9430598555]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({"date":"2024-08-02T00:00:00Z","siteId":"1033","po":[{"poNumber":"55903110432","items":[{"poItemNumber":"559031104321","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5590311043210","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104322","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104323","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104324","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104325","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104326","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104327","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104328","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104329","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}],"appnDate":"2024-08-02T00:00:00Z","dstSiteId":"1033","appnStartTime":"06:00","appnEndTime":"13:00"}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/validate/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=9511464786]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create({"vehicle":{"truckType":"1109","truckNumber":"KA12AA2653","driverDetails":{"driverName":"krishna","driverNumber":"987654321"}},"isPalletized":true,"appnDate":"2024-08-02T00:00:00Z","appnStartTime":"06:00","appnEndTime":"13:00","dstSiteId":"1033","po":[{"poNumber":"55903110432","items":[{"poItemNumber":"559031104321","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5590311043210","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104322","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104323","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104324","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104325","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104326","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104327","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104328","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"559031104329","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}]}); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:45 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:46 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:46 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create({
+    "asnNumber": "1033-20240802-ca8d9c0f-5423-4a47-a9db-bba1123ee735",
+    "appointmentId": "3C136E",
+    "dstSiteId": "1033",
+    "poNumber": [
+        "55903110432"
+    ],
+    "articleCount": 10,
+    "dock": "D2",
+    "appntDate": "2024-08-02T00:00:00Z",
+    "appntStartTime": "06:00",
+    "appntEndTime": "13:00",
+    "status": "CREATED",
+    "vehicle": {
+        "truckType": "1109",
+        "truckNumber": "KA12AA2653",
+        "driverDetails": {
+            "driverName": "krishna",
+            "driverNumber": "987654321"
+        },
+        "isVehicleCheckedIn": false
+    },
+    "buyerDetails": {
+        "id": 0,
+        "name": "BARODA GM DC",
+        "phone": "9876543211",
+        "email": "hari121@gmail.com",
+        "address": "Avenue Supermarts Ltd.   \nHorizon Industrial park,     \nVill.: Bamangam, Tal.: Karjan,   \nDist.: Vadodara -391243",
+        "fax": 0,
+        "gstIn": "27AAZPS9583KGSTIN",
+        "cin": "27AAZPS9583KCIN",
+        "attn": "",
+        "latitude": 73.158562,
+        "longitude": 22.180861,
+        "buyerCode": "H10",
+        "state": "Gujarat",
+        "siteId": "1033"
+    },
+    "supplierDetails": {
+        "supplierCode": "",
+        "vendorCode": "100245",
+        "name": "H R ENTERPRISES PVT LTD",
+        "email": "v-richa.agarwal@dmartlabs.com",
+        "address": "ANDHERI",
+        "cin": "",
+        "fax": "778897889",
+        "phone": "8800990099",
+        "gstIn": "27AAZPS9583K1Z9",
+        "attn": "Accounts payable",
+        "fssai": "12345678901234"
+    },
+    "isPalletized": true,
+    "invoicePdf": "",
+    "qrCodeDataUrl": "",
+    "barcode": "",
+    "totalWeight": 0.288,
+    "totalVol": 28.799999999999994,
+    "totalBox": 40,
+    "totalPallets": 40,
+    "version": "507edf08-a637-427b-b8bf-0c4d6c1ad6e3",
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "consignName": "",
+    "consignValue": 0
+}); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:46 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:46 AM</td>
+        <td>
+          Response Time is 892 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9616109433, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create({"postingDate":"20240731","grnDate":"20240802","invoiceNumber":7162055177,"inwardNumber":"5242688","userId":"Harikrish","headerText":"1033-0164523","grnNumber":"1033/1033-01/64523","items":[{"poNumber":"55903110432","matNumber":"200000013","siteId":"1033","storageLoc":"HRS","batchNumber":"200000013","movementType":"101","grnQty":48,"unit":"EA","itemSeq":1,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003745","siteId":"1033","storageLoc":"HRS","batchNumber":"300003745","movementType":"101","grnQty":48,"unit":"EA","itemSeq":10,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"200000012","siteId":"1033","storageLoc":"HRS","batchNumber":"200000012","movementType":"101","grnQty":48,"unit":"EA","itemSeq":2,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003715","siteId":"1033","storageLoc":"HRS","batchNumber":"300003715","movementType":"101","grnQty":48,"unit":"EA","itemSeq":3,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003689","siteId":"1033","storageLoc":"HRS","batchNumber":"300003689","movementType":"101","grnQty":48,"unit":"EA","itemSeq":4,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003693","siteId":"1033","storageLoc":"HRS","batchNumber":"300003693","movementType":"101","grnQty":48,"unit":"EA","itemSeq":5,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003694","siteId":"1033","storageLoc":"HRS","batchNumber":"300003694","movementType":"101","grnQty":48,"unit":"EA","itemSeq":6,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003700","siteId":"1033","storageLoc":"HRS","batchNumber":"300003700","movementType":"101","grnQty":48,"unit":"EA","itemSeq":7,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003702","siteId":"1033","storageLoc":"HRS","batchNumber":"300003702","movementType":"101","grnQty":48,"unit":"EA","itemSeq":8,"inwardIndicator":"C"},{"poNumber":"55903110432","matNumber":"300003704","siteId":"1033","storageLoc":"HRS","batchNumber":"300003704","movementType":"101","grnQty":48,"unit":"EA","itemSeq":9,"inwardIndicator":"C"}]}); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Endpoint is : /pi-handler/pogrn/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:47 AM</td>
+        <td>
+          Response Time is 345 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=9924181887]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-28'></div>
+ <script>
+  function jsonTreeCreate28() { 
+   document.getElementById('code-block-json-28').innerHTML = JSONTree.create({"date":"2024-08-02T00:00:00Z","siteId":"1033","po":[{"poNumber":"55325225916","items":[{"poItemNumber":"553252259161","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5532522591610","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259162","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259163","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259164","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259165","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259166","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259167","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259168","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259169","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}]}); 
+  }
+  jsonTreeCreate28();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:48 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/availability/slots/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          poNumbersList 55903110432=====GetSlotsConfirmApponment0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          GetSlotsConfirmApponment is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          poNumbersList 55325225916=====GetSlotsConfirmApponment1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=9522445253]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create({"date":"2024-08-02T00:00:00Z","siteId":"1033","po":[{"poNumber":"55325225916","items":[{"poItemNumber":"553252259161","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5532522591610","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259162","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259163","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259164","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259165","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259166","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259167","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259168","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259169","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}],"appnDate":"2024-08-03T00:00:00Z","dstSiteId":"1033","appnStartTime":"06:00","appnEndTime":"13:00"}); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/validate/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Base URL is : https://canary.api.dmartlink.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjY5OGQ5YWYwLWNhZDQtNDQ4OC1iOWVkLTJhNzg0MjQzODY2MyIsInR5cCI6IkpXVCIsInVzZSI6IkFUIn0.eyJleHAiOjE3MjI0ODI1NDQsImlhdCI6MTcyMjM5NjE0NCwiaXNzIjoiZG1hcnQiLCJqdGkiOiI4NGUyYWFhZC0zOTdjLTRmYjEtYmUwNS02MzE3NDcxZTM3YmMiLCJuYmYiOjE3MjIzOTYxNDQsInN1YiI6IjI2ZjIyNzM0LTkxYzctNDQ3YS1hZmIwLTExM2NjMzQ4MTJlZiIsInZlciI6IjhiOWQ3MTgzNzRhMjhiMiJ9.RMX_AnPTIN4za4Tg6x1QObr0-AGzBNbps8DmNqdqOMFGez79zUIX6aKwIHeEXFWqo2hYJB7TfcZPATTkKw3HjEXb-IlPth3Le2xBaHeHy1ZCkQyNG27ix1fQPz9MWU1Mi6kolBBRkPmpIN31BKiLRsg6mmynK3zla9g7_lWSg0Wzn9ckcHr_Wmr4F06mAl4nG0uTQCOVkqgNEFXutt0rXOyxiNEvQptUGBLKNWh7SeEuacm8ooWlX14sTx7jZzBKuLBj0nHxz5l6syQHl5yw2PkIbg6C_C_cu1laYl-xgcNYDq5ZPtZ-66KECFoHasEAw0jHnhQ_FiSemBku5-dpOw, requestid=927502546]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-30'></div>
+ <script>
+  function jsonTreeCreate30() { 
+   document.getElementById('code-block-json-30').innerHTML = JSONTree.create({"vehicle":{"truckType":"1109","truckNumber":"KA12AA2653","driverDetails":{"driverName":"krishna","driverNumber":"987654321"}},"isPalletized":true,"appnDate":"2024-08-03T00:00:00Z","appnStartTime":"06:00","appnEndTime":"13:00","dstSiteId":"1033","po":[{"poNumber":"55325225916","items":[{"poItemNumber":"553252259161","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"5532522591610","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259162","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259163","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259164","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259165","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259166","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259167","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259168","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true},{"poItemNumber":"553252259169","qty":48,"weight":0.028799999999999996,"volume":2.88,"boxes":4,"isPalletized":true}]}]}); 
+  }
+  jsonTreeCreate30();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:50 AM</td>
+        <td>
+          Endpoint is : /api/dlnk/asn/v2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:51 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:51 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create({
+    "asnNumber": "1033-20240803-5b5a0f06-d49e-4989-9967-c20fe5a733e9",
+    "appointmentId": "7350A4",
+    "dstSiteId": "1033",
+    "poNumber": [
+        "55325225916"
+    ],
+    "articleCount": 10,
+    "dock": "D4",
+    "appntDate": "2024-08-03T00:00:00Z",
+    "appntStartTime": "06:00",
+    "appntEndTime": "13:00",
+    "status": "CREATED",
+    "vehicle": {
+        "truckType": "1109",
+        "truckNumber": "KA12AA2653",
+        "driverDetails": {
+            "driverName": "krishna",
+            "driverNumber": "987654321"
+        },
+        "isVehicleCheckedIn": false
+    },
+    "buyerDetails": {
+        "id": 0,
+        "name": "BARODA GM DC",
+        "phone": "9876543211",
+        "email": "hari121@gmail.com",
+        "address": "Avenue Supermarts Ltd.   \nHorizon Industrial park,     \nVill.: Bamangam, Tal.: Karjan,   \nDist.: Vadodara -391243",
+        "fax": 0,
+        "gstIn": "27AAZPS9583KGSTIN",
+        "cin": "27AAZPS9583KCIN",
+        "attn": "",
+        "latitude": 73.158562,
+        "longitude": 22.180861,
+        "buyerCode": "H10",
+        "state": "Gujarat",
+        "siteId": "1033"
+    },
+    "supplierDetails": {
+        "supplierCode": "",
+        "vendorCode": "100245",
+        "name": "H R ENTERPRISES PVT LTD",
+        "email": "v-richa.agarwal@dmartlabs.com",
+        "address": "ANDHERI",
+        "cin": "",
+        "fax": "778897889",
+        "phone": "8800990099",
+        "gstIn": "27AAZPS9583K1Z9",
+        "attn": "Accounts payable",
+        "fssai": "12345678901234"
+    },
+    "isPalletized": true,
+    "invoicePdf": "",
+    "qrCodeDataUrl": "",
+    "barcode": "",
+    "totalWeight": 0.288,
+    "totalVol": 28.799999999999994,
+    "totalBox": 40,
+    "totalPallets": 40,
+    "version": "507edf08-a637-427b-b8bf-0c4d6c1ad6e3",
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "consignName": "",
+    "consignValue": 0
+}); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:51 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:51 AM</td>
+        <td>
+          Response Time is 862 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          [Content-Type=application/json, password=3poXy$6o29, requestId=9703634904, username=integrator]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-32'></div>
+ <script>
+  function jsonTreeCreate32() { 
+   document.getElementById('code-block-json-32').innerHTML = JSONTree.create({"postingDate":"20240731","grnDate":"20240803","invoiceNumber":7144184498,"inwardNumber":"5242688","userId":"Harikrish","headerText":"1033-0159547","grnNumber":"1033/1033-01/59547","items":[{"poNumber":"55325225916","matNumber":"200000013","siteId":"1033","storageLoc":"HRS","batchNumber":"200000013","movementType":"101","grnQty":48,"unit":"EA","itemSeq":1,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003745","siteId":"1033","storageLoc":"HRS","batchNumber":"300003745","movementType":"101","grnQty":48,"unit":"EA","itemSeq":10,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"200000012","siteId":"1033","storageLoc":"HRS","batchNumber":"200000012","movementType":"101","grnQty":48,"unit":"EA","itemSeq":2,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003715","siteId":"1033","storageLoc":"HRS","batchNumber":"300003715","movementType":"101","grnQty":48,"unit":"EA","itemSeq":3,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003689","siteId":"1033","storageLoc":"HRS","batchNumber":"300003689","movementType":"101","grnQty":48,"unit":"EA","itemSeq":4,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003693","siteId":"1033","storageLoc":"HRS","batchNumber":"300003693","movementType":"101","grnQty":48,"unit":"EA","itemSeq":5,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003694","siteId":"1033","storageLoc":"HRS","batchNumber":"300003694","movementType":"101","grnQty":48,"unit":"EA","itemSeq":6,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003700","siteId":"1033","storageLoc":"HRS","batchNumber":"300003700","movementType":"101","grnQty":48,"unit":"EA","itemSeq":7,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003702","siteId":"1033","storageLoc":"HRS","batchNumber":"300003702","movementType":"101","grnQty":48,"unit":"EA","itemSeq":8,"inwardIndicator":"C"},{"poNumber":"55325225916","matNumber":"300003704","siteId":"1033","storageLoc":"HRS","batchNumber":"300003704","movementType":"101","grnQty":48,"unit":"EA","itemSeq":9,"inwardIndicator":"C"}]}); 
+  }
+  jsonTreeCreate32();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Endpoint is : /pi-handler/pogrn/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Response Time is 334 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          asnNumberIdList is 1033-20240802-ca8d9c0f-5423-4a47-a9db-bba1123ee735==>asnNumber 3C136E===>appointmentId 0============>asnNumber + ==> appointmentId0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          grnNumberIdList is 1033-0164523============>grnnumber0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          asnNumberIdList is 1033-20240803-5b5a0f06-d49e-4989-9967-c20fe5a733e9==>asnNumber 7350A4===>appointmentId 1============>asnNumber + ==> appointmentId1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          grnNumberIdList is 1033-0159547============>grnnumber1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          2==========>asnNumberIdList.size
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          2==========>grnList.size
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:52:52 AM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 31, 2024 08:52:20 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 31, 2024 08:52:52 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='3%'><b>8</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>212</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"generate bearer token for vendor appointmet":5.435,"Create a multiple purchase orders using Excel":4.346,"Create a multiple purchase orders using Excel":2.41,"Update a multiple purchase orders using Excel":2.192,"Update a multiple purchase orders using Excel":2.144,"Get all the po's which are created in DC":6.117,"get the calender about particular DC":0.36,"Get slots and confirm appontement and create GRN":9.248
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 8,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 212
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

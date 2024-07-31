@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Labs User's/Downloads/projectfiles/ysh/PWP_API Framework-28012024/DemoPWP_API Framework/src/main/java/com/dmartLabs/runner/SorterTestRunner.java">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <test preserve-order="true"
+          name="Test1">
         <classes>
-            <class name="com.dmartLabs.runner.SorterTestRunner">
-                <methods>
-                    <include name="scenario"/>
-                </methods>
+            <class name="com.dmartLabs.runner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test preserve-order="true"
+          name="Test2">
+        <classes>
+            <class name="com.dmartLabs.runner.TestRunner">
             </class>
         </classes>
     </test>

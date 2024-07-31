@@ -13,6 +13,7 @@ import org.json.simple.JSONObject;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -83,8 +84,56 @@ public class RequestGenerator implements CommonConstants {
 	}
 
 
+	public static RequestSpecification getRequestWithQueryParams123(Map<String,String>header,Map<String, Object> queryParam) {
+		try {
+			//LOGGER.info("Path " + path);
+			LOGGER.info("queryParam " + queryParam);
+			requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL1).headers(header)
+					.queryParams(queryParam);
+			printRequestLogInReport(requestSpecification);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return requestSpecification;
+	}
 
+	public static RequestSpecification getRequestWithQueryParams1234(Map<String,String>param,Object body) {
+		try {
+			//LOGGER.info("Path " + path);
 
+			requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URLid).queryParams(param)
+					.body(body);
+			printRequestLogInReport(requestSpecification);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return requestSpecification;
+	}
+
+    public static RequestSpecification getRequestWithheader(Map<String,String>header,Object body) {
+        try {
+            //LOGGER.info("Path " + path);
+
+            requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL1).headers(header)
+                    .body(body);
+            printRequestLogInReport(requestSpecification);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return requestSpecification;
+    }
+    public static RequestSpecification getRequestWithQueryParamHeader(Map<String,String>param,Map<String,String>header,Object body) {
+        try {
+            //LOGGER.info("Path " + path);
+
+            requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URLid).queryParams(param).headers(header)
+                    .body(body);
+            printRequestLogInReport(requestSpecification);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return requestSpecification;
+    }
 
 
 	/**
@@ -115,6 +164,19 @@ public class RequestGenerator implements CommonConstants {
             // LOGGER.info("Path " + path);
             LOGGER.info("request " + request);
             requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL).body(request);
+            printRequestLogInReport(requestSpecification);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LOGGER.info("requestSpecification : " + requestSpecification);
+        return requestSpecification;
+    }
+
+    public static RequestSpecification getRequest1(Map<String,String> header) {
+        try {
+            // LOGGER.info("Path " + path);
+
+            requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL).headers(header);
             printRequestLogInReport(requestSpecification);
         } catch (Exception e) {
             e.printStackTrace();
@@ -187,7 +249,7 @@ public class RequestGenerator implements CommonConstants {
 		try {
 			// LOGGER.info("Path " + path);
 			LOGGER.info("header " + header);
-			requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL).headers(header)
+			requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL1).headers(header)
 					.body(request);
 			printRequestLogInReport(requestSpecification);
 		} catch (Exception e) {
@@ -195,6 +257,18 @@ public class RequestGenerator implements CommonConstants {
 		}
 		return requestSpecification;
 	}
+    public static RequestSpecification getRequestpo(Map<String, String> header, Object request) {
+        try {
+            // LOGGER.info("Path " + path);
+            LOGGER.info("header " + header);
+            requestSpecification = given().contentType(ContentType.JSON).baseUri(BASE_URL).headers(header)
+                    .body(request);
+            printRequestLogInReport(requestSpecification);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return requestSpecification;
+    }
 
 	/**
 	 * @param header
